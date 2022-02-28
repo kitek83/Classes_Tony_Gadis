@@ -1,0 +1,26 @@
+import class_account
+def main():
+    print('Enter account details.')
+    acc_num = input('Enter account number: ')
+    int_rate = input('Enter interest rate: ')
+    bal = input('Enter your balance : ')
+    accounts = class_account.Account(acc_num,int_rate,bal)
+
+    print('Enter certificate deposit details.')
+    acc_num = input('Enter account number: ')
+    int_rate = input('Enter interest rate: ')
+    bal = input('Enter your balance : ')
+    mat_date = input('Enter maturity date: ')
+    cd = class_account.CD(acc_num,int_rate,bal,mat_date)
+
+    print('Account details:')
+    print('Account number: ',accounts.get_acc_num())
+    print('Interest rate:' , accounts.get_int_rate())
+    print('Balance: ', accounts.get_balance())
+    print('------------------------------------')
+    print('Deposit certificate:')
+    print('Account number:', cd.get_acc_num())
+    print('Interest rate: ', cd.get_int_rate())
+    print('Balance:', cd.get_balance())
+    print('Maturity date: ', cd.get_maturity())
+main()

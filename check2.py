@@ -1,0 +1,6 @@
+phones = list()
+print(phones)
+phones.append('Kris')
+phones.append('Jack')
+print(phones)
+phones2 = make_list()

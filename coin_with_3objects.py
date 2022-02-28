@@ -1,0 +1,20 @@
+import coin_class
+def main():
+    coin1 = coin_class.Coin()
+    coin2 = coin_class.Coin()
+    coin3 = coin_class.Coin()
+    print('Showing 1 toss for 3 coins ')
+    print(coin1.result())
+    print(coin2.result())
+    print(coin3.result())
+    print()
+    print('3 coin toss simulation.')
+    coin1.toss()
+    coin2.toss()
+    coin3.toss()
+    print('Getting results:')
+    print(coin1.result())
+    print(coin2.result())
+    print(coin3.result())
+    
+main()
